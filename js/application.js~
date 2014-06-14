@@ -1,0 +1,54 @@
+$(document).ready(function() {
+	// Changing the opacity of the social icons in the footer
+	$(".social-icon").mouseenter(function() {
+		$(this).css("opacity", 1);
+	}).mouseleave(function() {
+		$(this).css("opacity", 0.5);
+	});
+	$("#footer").hide();
+ });
+
+$(document).scroll(function() {
+	// Grabbing the displacement from the top when scrolled and storing as a variable 'y'
+	var y = $(this).scrollTop();
+
+	if (y > 275) {
+		$("#section1").fadeIn();
+	}
+	else {
+		// Fade out
+		$("#section1").fadeOut();
+	}
+	if (y > 450) {
+		$("#navigation").removeClass("navbar-static-top").css("margin-top", "-50px").animate({"top" : "50px"},"slow").addClass("navbar-fixed-top");
+		$("#carousel-example-generic").css("margin-top", "50px");
+		$("#section1").css("margin-top", "110px");
+	}
+	else{		
+		$("#navigation").removeClass("navbar-fixed-top").addClass("navbar-static-top");
+		$("#section1").css("margin-top", "40px");
+//		$("#footer").fadeIn("slow");
+	}
+//	if (y > 450 && y < 1200) {
+//		$("#footer").fadeOut("slow");
+//	}
+	// Used for displaying the next line 
+	if (y > 600) {
+		$("#section2").fadeIn();
+	}
+	else {
+		// Fade out
+		$("#section2").fadeOut();
+	}
+		// Used for displaying the next line 
+	if (y > 1000) {
+		$("#section3").fadeIn();
+	}
+	else {
+		// Fade out
+		$("#section3").fadeOut();
+	}
+	if (y > 1100) {
+		$("#footer").fadeIn().addClass("navbar-static-bottom");
+	}
+});

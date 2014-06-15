@@ -18,6 +18,10 @@ body {
 	padding-bottom: 20px;
 }
 
+.header-image {
+	display: none;
+}
+
 #email {
 	width: 440px;
 }
@@ -263,3 +267,25 @@ li a {
 		margin-left: 0%;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	#frontSlider {
+		display: none;
+	}
+
+	.header-image {
+		display: block;
+	}
+
+	.header-image img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.carousel-caption {
+		bottom: 375px;
+	}
+
+}
+
+

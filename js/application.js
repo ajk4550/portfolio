@@ -17,16 +17,16 @@ $(document).ready(function() {
 
 $(document).scroll(function() {
 	// Grabbing the displacement from the top when scrolled and storing as a variable 'y'
-	var y = $(this).scrollTop();
-	if (y > 450) {
-		$("#navigation").removeClass("navbar-static-top").css("margin-top", "-50px").animate({"top" : "50px"},"slow").addClass("navbar-fixed-top");
-		$("#carousel-example-generic").css("margin-top", "50px");
-		$("#section1").css("margin-top", "110px");
-	}
-	else{		
-		$("#navigation").removeClass("navbar-fixed-top").addClass("navbar-static-top");
-		$("#section1").css("margin-top", "40px");
-	}
+	// var y = $(this).scrollTop();
+	// if (y > 450) {
+	// 	$("#navigation").removeClass("navbar-static-top").css("margin-top", "-50px").animate({"top" : "50px"},"slow").addClass("navbar-fixed-top");
+	// 	$("#carousel-example-generic").css("margin-top", "50px");
+	// 	$("#section1").css("margin-top", "110px");
+	// }
+	// else{		
+	// 	$("#navigation").removeClass("navbar-fixed-top").addClass("navbar-static-top");
+	// 	$("#section1").css("margin-top", "40px");
+	// }
 
 	// if (y == 480) {
 	// 	$("li.active").next().addClass("active").prev().removeClass("active");

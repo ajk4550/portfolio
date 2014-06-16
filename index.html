@@ -7,6 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css' />
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/application.js"></script>
 	<link rel="icon" type="image/png" href="img/icon.png">
 </head>
 <div id="navigation" class="navbar navbar-inverse navbar-fixed-top">
@@ -20,16 +21,16 @@
 		<div class="collapse navbar-collapse navHeaderCollapse">
 			<ul class="nav navbar-nav navbar-right">
 				<!-- <li><a href="#frontSlider">Home</a></li> -->
-				<li><a href="#frontEndHeader">Front End</a></li>
-				<li><a href="#filler1">Back End</a></li>
-				<li><a href="#filler2">Portfolio</a></li>
+				<li><a href="#frontEndHeader" title="Front End">Front End</a></li>
+				<li><a href="#back-end-container">Back End</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#about">About Me</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<body data-spy="scroll" target="#navigation">
+<body data-spy="scroll" target="#navigation" data-offset="94">
 	<div id="frontSlider" class="carousel slide" data-ride="carousel">
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
@@ -143,7 +144,7 @@
 
 	<!-- Start Portfolio Section! -->
 
-			<div class="container-fluid portfolio-container">
+			<div id="portfolio" class="container-fluid portfolio-container">
 
 					<div class="row">
 
